@@ -1,0 +1,17 @@
+/* TEAM */
+Owner: gpr1nce
+Site: gpr1nce.github.io/contact.html
+Twitter: your Twitter username
+Instagram:
+LinkedIn:
+GitHub: github.com/gpr1nce
+Location: Chicago IL USA
+
+/* THANKS */
+Name: MicroTrain Technologies
+
+/* SITE */
+Last update: 2021/11/11
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery, etc.
+Software: LAMP, MERN, MEAN, VSCode

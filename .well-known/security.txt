@@ -1,0 +1,4 @@
+Contact: https://gpr1nce.github.io/contact.html
+Expires: 2022-11-11T22:20:00.000Z
+Acknowledgments: gpr1nce.github.io/humans.txt
+Preferred-Languages: EN
