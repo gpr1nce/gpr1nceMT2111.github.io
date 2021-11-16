@@ -3,31 +3,45 @@
     <head>
        <title>gpr1nce Resume</title>
        <meta charset="UTF-8">
+       <meta name="description" content="George Prince Web Developer">
+       <meta name="keywords" content="resume, web development, application development, George Prince, George, Prince">
+  
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+
        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
        <link rel="manifest" href="/site.webmanifest">  
        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  
+      <!-- /* load fonts  */ -->
+      <style>
+      <!-- /* open sans import */ -->
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+      /* <!-- ubuntu for restyled headings --> */
+      @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+      </style> 
     </head>
-<body>
-      <!-- <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav> -->
-<main>
-  <section>
+<body class="crumply">
+  <header>
+    <span class="logo">gpr1nce</span>
+    <a id="toggleMenu">Menu<a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <section class="hdr">
     <h1>George Prince</h1>
   </section>
-  <section>
-    <h6>123 Fourth Street - City, ST Zip - Phone - prince.george35@gmail.com</h6>
+  <section class="slugline">
+    123 Fourth Street - City, ST Zip - 773-841-9068 - <a href="mailto:prince.george35@gmail.com">prince.george35@gmail.com</a>
   </section>
-  <section>
+  <section class="hdr">
     <h2>Full Stack Web and Hybrid Mobile Applications Developer</h2>
  <p>Full stack web and hybrid mobile applications developer specializing in full stack Javascript application and architectures. Experienced in all states of development life cycle, well versed in programming languages.</p>
 <ul>
@@ -35,32 +49,50 @@
   <li>Outstanding leadership abilities; able to coordinate all phases of project-based efforts.</li>
 </ul>
 </section>
-<section>
-<h3>Core Competencies</h3>
-<ul>
-  <li>Full Stack Development</li>
-  <li>Strong Analytical Skills</li>
-  <li>Prioritizes Tasks</li>
-</ul>
-  <ul>
-  <li>Hybrid Mobile Development</li>
-  <li>Savvy Problem Solver</li>
-  <li>Strong Leadership Skills</li>
-</ul>
-</section>
-<section>
-<h2>CERTIFICATIONS / TECHNICAL PROFICIENCIES</h2>
+<section class="hdr">
+  <aside>
+  <h3>Core Competencies</h3>
+  <!-- borrwoed from entirenet -->
+  <div class="float-container">
 
-<ul>
-  <li>Certifications: Agile Certified Scrum Master</li>
-  <li>Platforms: Linux, Windows, Mac, LAMP, MEAN, NodeJS</li>
-  <li>Databases: MySQL, MongoDB</li>
-  <li>Tools: VS Code, SSH, Gulp, Git</li>
-  <li>Languages: HTML, CSS, SASS, Javascript, ES6, PhP, Bash, SQL</li>
-</ul>
-</section>
-<section>
-<h2>PROFESSIONAL EXPERIENCE</h2>
+    <div class="float-child-first">
+          <ul>
+              <li><span>Full Stack Development</span></li>
+              <li><span>Strong Analytical Skills</span></li>
+              <li><span>Prioritizes Tasks</span></li>
+            </ul>
+    </div>
+    
+    <div class="float-child-add">
+          <ul>
+              <li><span>Hybrid Mobile Development</span></li>
+              <li><span>Savvy Problem Solver</span></li>
+              <li><span>Strong Leadership Skills</span></li>
+            </ul>
+    </div>
+    
+  </div>
+
+</aside>
+  </section>
+  <br>
+
+  <div>
+    <section class="hdr">
+      <h2>CERTIFICATIONS / TECHNICAL PROFICIENCIES</h2>
+    </section> 
+  <section>
+  <ul>
+    <li>Certifications: Agile Certified Scrum Master</li>
+    <li>Platforms: Linux, Windows, Mac, LAMP, MEAN, NodeJS</li>
+    <li>Databases: MySQL, MongoDB</li>
+    <li>Tools: VS Code, SSH, Gulp, Git</li>
+    <li>Languages: HTML, CSS, SASS, Javascript, ES6, PhP, Bash, SQL</li>
+  </ul>
+  </section>
+</div>
+<section class="hdr">
+  <h2>PROFESSIONAL EXPERIENCE</h2>
 </section>
 <section>
 <h3>Bob's Custom Websites 2015-present</h3>
@@ -78,8 +110,8 @@
   <li>Recognized for the development of excellent business relationships, providing exemplary customer service.</li>
 </ul>
 </section>
-<section>
-<h2>EDUCATION</h2>
+<section class="hdr">
+  <h2>EDUCATION</h2>
 <p>DeVry University - Chicago IL 2011 - 2015</p>
 <p>Bachelor of Science in Computer Information Systems</p>
 <br>
@@ -87,5 +119,20 @@
 <p>Agile Full Stack Web and Hybrid Mobile Application Development</p>
 </section>
 </main>
+<script>
+
+  var toggleMenu = document.getElementById('toggleMenu');
+  var nav = document.querySelector('nav');
+  toggleMenu.addEventListener(
+    'click',
+    function(){
+      if(nav.style.display=='block'){
+        nav.style.display='none';
+      }else{
+        nav.style.display='block';
+      }
+    }
+  );
+</script>
 </body>
 </html>
