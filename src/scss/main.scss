@@ -6,9 +6,42 @@
 
 }
 
-// new s/css from Dinosaurs video 
+// color pallete, chosen at coolors.com
+// noted by tone
+// urgent: Mango Tango #F0803C
+// calming: Dark Slate Gray #315659
+// forward-looking: French Sky Blue #85C0FF
+// notebook: Pale Spring Bud #F4F1BB
+// regal: Glossy Grape #A599B5
+
+// trying to display color chips
+// .chip li:nth-child(1) a {    background:#F0803C; }
+// .chip li:nth-child(2) a {    background: #315659; }
+// .chip li:nth-child(3) a {    background:  #85C0FF; }
+// .chip li:nth-child(4) a {    background: #F4F1BB; }
+// .chip li:nth-child(5) a {    background:  #A599B5; }
+
+// section .pict {
+//   position:relative;
+//   height: 100%;
+//   width:100%;
+// }
+// style img so not oversize
+.pict img {
+  // position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  width: 20px;
+  // max-height: 110;
+}
+
+// new s/css from Dinosaurs video was OKish
 // grid-based layout
 body {
+  background: #F4F1BB;
   display: grid;
   min-height: 100vh;
   grid-template-columns: 200px 1fr 150px;
@@ -16,11 +49,14 @@ body {
 }
 
 
-aside {
+.aside {
   grid-row: 2;
   grid-column: 2 / 3;
-  background: #ccc;
-  padding: 0 20px;
+  background: #F4F1BB;
+  padding: 20px;
+  max-width: 60%;
+  margin: 0 auto;
+
 }
 
 main {
@@ -46,142 +82,27 @@ footer {
   padding: 1rem;
 }
 
+.hdr{
+  text-align: center;
+}
 /* crumply paper background? */
 // .crumply {
 //   background-image: url("/var/www/gpr1nce.github.io/crumpy.jpg");
 // }
 
-// 11/16 lab CSS adds 
-
-// $primary-font-stack: "Helvetica Neue",Helvetica,Arial,sans-serif;
-// $primary-color: #333;
-
-/* mixins */
-
-/** clear floats */
-// @mixin clearfix() {
-//   &:after {
-//     content: "";
-//     display: table;
-//     clear: both;
-//   }
-// }
-
-/* universal settings */
-
-// * {
-//   box-sizing: border-box;
-// }
-
-// .container {
-//   width: 1170px;
-//   margin: 0 auto;
-// }
-
-/* Utility Classes */
-// ->> removing 11/18 for Dino demo revision 
-// .row {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-// }
-
-// clear the column formatting after competencies 
-// .row:after {
-//   content: "";
-//   display: contents;
-// }
-
-
-// 11/18 simplification remove start 
-
-// .col {
-//   padding: .5rem;
-//   background: #fff;
-// }
-
-// .col-4{
-//   @extend .col;
-//   grid-column:  span 4;
-//   grid-row: 1;
-// }
-
-// .col-3{
-//   @extend .col;
-//   grid-column:  span 3;
-//   grid-row: 1;
-// }
-
-// .col-2{
-//   @extend .col;
-//   grid-column:  span 2;
-//   grid-row: 1;
-// }
-
-// .col-1{
-//   @extend .col;
-//   grid-column:  span 1;
-//   grid-row: 1;
-// }
-
-// .wrapper {
-//   display: grid;
-//   grid-template-columns: 1fr 3fr;
-//   @extend .container;
-// }
-// 11/18 simplification remove end 
-
-// 11/18 simplification remove start 
-/* trying aside format for biggest callout ? */
-// .hdr {
-//   font-family: 'Ubuntu', sans-serif;
-//   margin-top: 20px;
-//   text-align: center;
-//   }
-
-//   .sectDetail {
-//     font-family: 'Open Sans', sans-serif;
-//     text-align: left;
-//     border: darkblue solid 2px;
-//   }
-  
-//   .sectBulletDetail {
-//     font-family: 'Open Sans', sans-serif;
-//     text-align: left;
-//     border: red solid 2px;
-//   }
-// 11/18 simplification remove end 
-  
-    
-
-//   aside {
-//   margin-top: 0;
-//   padding: 0 20px 20px 20px;
-//   background-color: paleturquoise;
-//   font-weight: bold;
-//   text-align: center;
-//   border: #000 2px solid;
-//   border-radius: 50%;
-
-
-// }
-
-/* li span {
-  position: relative;
-  left: -10px;
-  padding: 0 20px 20px 20px;
-} */
-
-
 .slugline {
   font-size: small;
   font-weight: lighter;
-  margin-bottom: 20px;
+  margin: 10px 0;
   text-align: center;
+  color: #F4F1BB;
+  padding: 5px;
+  background-color: #315659;
 }
 
 /* all below is pre-restyling wkend asst */
 .avatar {
-    border-radius: 50%; 
+    border-radius: 5%;
     float: left; 
     margin-right: 1em;
   }
@@ -214,8 +135,9 @@ footer {
     list-style: none;
   }
   
-  nav ul li{
-    display: inline;
+  nav ul li,
+ {
+    display: block;
   }
   
   nav ul li a,

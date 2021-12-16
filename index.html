@@ -7,8 +7,12 @@
        <meta name="keywords" content="Git, GitHub, George Prince, George, Prince, gpr1nce">
 
        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-       <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
-       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!-- 12/5/21: is gulp not working? SRC changes not all moving to dist
+  ->> for dev/test am rerouting to src -->
+  <link rel="stylesheet" type="text/css" href="src/scss/main.scss">
+  <!-- this is what we set up in class; gulp likely misfunctioning -->
+  <!-- <link rel="stylesheet" type="text/css" href="dist/css/main.min.css"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
        <link rel="manifest" href="/site.webmanifest">
@@ -24,11 +28,13 @@
     </head>
     <body>
       <header>
-        <span class="logo">gpr1nce</span>
+        <div id="top" class="logo">George T Prince</div>
         <a id="toggleMenu">Menu<a>
+<a class="flushRight" href="#top">Top</a>          
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <!-- adding projects1 ID, linking to section, not div -->
+            <li><a href="#projects1">(this page) Class Projects</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="resCZG.html">CSS Styled Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -38,23 +44,109 @@
           <main>
             <section class="hdr">
               <h1>Hello World, my GitHub name is gpr1nce.</h1>
-            <!-- <section class="hdr"> -->
                 <h2>Don't understand GIT?</h2>
               </section>
-              <section class="slugline">
-            <h3>Hang in there until the light dawns</h3>
+            <section class="slugline">
+              <h4>Hang in there until the light dawns</h4>
             </section>
-<section>
-  <img class="avatar" src="croptIKBsquared2.jpg" alt="gpr1nce">
-  <!-- <img class="avatar" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="gpr1nce"> -->
-  
-
-        <p class="hdr">I am neither a new nor a very Experienced web developer. Currently in MicroTrain's Full Stack / Hybrid Mobile App Dev bootcamp, I've been astonished at how powerful client side tools have become. In the 20+ years since I first studied HTML the language and its supporting structures in CSS and Javascript are both easier to work with and greatly more sophisticated.</p>
+<div class="pict">
+            <img src="dist/img/undrstndGtfka5249179.jpg" alt="One Does Not Simply Understand GIT"
+            border: 2px solid #fff;>
+        <h3>Point taken.</h3>
         <br>
+</div>
+          <p>I am not a new web developer, but a good bootcamp has me thinking that way.</p>
+        <br>
+          <p>Currently in <a href="https://www.microtrain.net/programs/view/agile-full-stack-web-and-hybrid-mobile-application-development" target="_blank">MicroTrain's Full Stack / Hybrid Mobile App Dev course</a>, I'm been astonished at how powerful client side tools have become since I studied HTML v2. </p>
+          <br>
+            <p>            
+            It is as if I went to sleep one night after a day on the job building buttons for websites, parked my Pinto, and woke up the next morning with a Tesla in the driveway.
+          </p>
+          <br>
+            <p>            
+            Today, ambition in Web design can vault over technical debt to work with effects that are routinely made available in specialized sites. Type F12 on a web page and there is the code waiting for you to learn from.
+          </p>
+          <br>
+            <p>            
+            It's a design world both more demanding and more generous than ever I imagined.
+          </p>
+  </section>
+
+    <section class="slugline">
+    <h4>Observation</h4>
+  </section>
+  <br>
+  <div class="aside">
+    <p>
+      Not for me the hazards of the bleeding edge. I may be aquainted with the latest tools, but as a user I will find any interface hole and fall into it. This makes me a fine tester, but not so likely to jump for the latest.
+    </p>
+    <br>
+    <p>
+      I consider it an asset that I'm not transfixed by social media, even while striving to make a living in it (them?). 
+    </p>
+    <br>
+    <p>
+      Just as in the days of appointment broadcast TV I wonder how smartphone people find the time to be everywhere all at once.
+    </p>
+    <br>
+    <p>
+      I'm more inclined to ask why a particular app or site is compelling, but if you can persuade me that an app is worth putting on my device, then we'll really have something.
+    </p>
+    <br>
+    <p>
+      Perhaps, as with GIT, it's not so much understanding as diving in.</p>
+  </div>
 </section>
-<section class="projects1">
+
+<div class="demoNav">
+  <h2>This website uses a color pallette</h2>
+<h4>chosen at <a href="http://www.coolors.com">Coolors.com.</a></h4>
+</h2>
+<ul>
+<li>
+  <a>To convey urgency: Mango Tango #F0803C</a>
+</li>
+<li>
+  <a>To suggest calm: Dark Slate Gray #315659</a>
+</li>
+<li>
+  <a>For optimism: French Sky Blue #85C0FF</a>
+</li>
+<li>
+  <a>For user notes: Pale Spring Bud #F4F1BB</a>
+</li>
+<li>
+  <a>For POSH: Glossy Grape #A599B5</a>
+</li>
+</ul>
+</div>
+
+<!-- testing only -->
+<!-- <div class="demoNav">
+  <ul>
+    <li><a>Home</a></li>
+   <li> <a>About</a></li>
+   <li> <a>Works</a></li>
+   <li><a>Talk</a></li>
+   <li><a>Fifth</a></li>
+   <li><a>Sixth</a></li>
+   <li><a>Seventh</a></li>
+   <li><a>Eighth</a></li>
+  </ul>
+</div> -->
+
+  <p>
+  By hitting <em>[SPACE]</em> you cycle through a banded screen of 5 randomly-generated colors, find one shade you like and lock it. Hitting <em >[SPACE]</em> again will fill the unlocked columns with colors compatible with the ones you have already liked and locked.
+</p>
+
+<section id="projects1">
         <h2>Class projects</h2>
         <p>Built in class, these projects display a variety of programming solutions and approaches.</p>
+        <h3>Drawing Program</h3>
+        <ul>
+          <li><a href="">Vanilla Javascript version</a></li>
+          <li><a href="">JQuery version</a></li>
+        </ul>
         <h3>NASA Astronaut Photo of the Day</h3>
         <ul>
           <li><a href="">Vanilla Javascript version</a></li>
