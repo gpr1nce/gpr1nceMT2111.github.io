@@ -10,13 +10,16 @@ var scss = require('gulp-sass');
  * # styles - the name of a collection (this can be anything you like)
  * # src - the files to be gulped, multiple paths would be listed inside of an 
  * array
- * # dest - the output location
+ * # dest - the output location.
  * 
  */
 var paths = {
   styles: {
     src: 'src/scss/**.scss',
-    dest: 'dist/css/',
+    dest: 'dist/css/'
+// changed 12.16 
+// src: './src/scss/**.scss',
+// dest: './dist/css/',    
   }
 };
 
