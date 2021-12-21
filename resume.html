@@ -31,8 +31,6 @@
       </style>
     </head>
     <body>
-<div class="czg">
-  <section>
     <header>
       <span class="logo">+= value</span>
       <a id="toggleMenu">Menu<a>
@@ -44,7 +42,7 @@
         </ul>
       </nav>
     </header>
-
+<main>
 <header role="banner"> 
   <h1>George T. Prince</h1>
   <!-- <h2>Databarista LLC</h2> -->
@@ -187,4 +185,25 @@
     </p>
   </div>
   </section>
+
+</main>
+
+<script>
+
+  var toggleMenu = document.getElementById('toggleMenu');
+  var nav = document.querySelector('nav');
+  toggleMenu.addEventListener(
+    'click',
+    function(){
+      if(nav.style.display=='block'){
+        nav.style.display='none';
+      }else{
+        nav.style.display='block';
+      }
+    }
+  );
+</script>
+
+</body>
+</html>
 
