@@ -1,8 +1,10 @@
-/* all below is copied over from MT git version, to cross-check */
-.avatar {
-  border-radius: 5%;
-  float: left; 
-  margin-right: 1em;
+/* open sans import */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* <!-- ubuntu for restyled headings -->  */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  font-family: 'Open Sans', 'Ubuntu', sans-serif;
 }
 
 body{
@@ -10,48 +12,91 @@ body{
   margin: 0;
 }
 
-/* open sans import */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-/* <!-- ubuntu for restyled headings -->  */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+header {
+  height: 50px;
+  background: #000;
+  color: #fff;
+  padding: 0 .5rem 0 1rem;
+}
+
+header .logo{
+  line-height: 50px;
+  font-weight: bold;
+}
+
+nav {
+  float: right;
+}
 
 
-* {
-  font-family: 'Open Sans', 'Ubuntu', sans-serif;
-  padding: 0;
+nav ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li
+{
+  display: inline;
+}
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited{
+  display: inline-block;
+  padding: 0 .5rem;
+  color: #fff;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  background: #444;
+}
+
+.banner {
+  text-align: center;
+  margin: 20px;
 }
 
 .summary {
   padding: 10px;
-  max-width: 60%;
+  max-width: 75%;
   background-color: #85C0FF;
   margin:auto;
-  display: block;
-  text-align: left;
-}
-
-.summary h4 {
-  text-align: left;
+  text-align: center;
+  filter: drop-shadow(5px 5px 4px #444);
+  border: #222 1px solid;
 }
 
 .summary h5 {
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 10px 0px;
+}
+
+.summary h4 {
+  margin: 0;
+  font-style: italic;
+  padding: 0 0 0 0;
 }
 
 // aside was a class; now using as tag
 aside {
-  grid-row: 2;
-  grid-column: 2 / 3;
   background: #F4F1BB;
   padding: 20px;
   max-width: 60%;
   margin: 0 auto;
-
+  filter: drop-shadow(5px 5px 4px #444);
+  border: #222 1px solid;
 }
 
 aside ul {
-  margin-left: 10px;
+  margin: 0 0 10px 10px;
+  list-style-type: disc;
+
+}
+
+aside h1, h2, h3, h4 {
+  margin: 0;
 }
 
 ul {
@@ -59,15 +104,24 @@ ul {
 }
 
 .explanation {
-  padding: 20px;
+  padding: 10px;
 }
 
-#zen-intro {
-  text-align: center;
-  margin: auto;
-  background-color: #A599B5;
-  padding: 10px 0px;
+.explanation ul {
+  list-style-type: disc;
 }
+
+.intro {
+  text-align: center;
+  margin: 10px 0 10px 0;
+  background-color: #A599B5;
+  // padding: 2px 0px;
+}
+
+.intro h3, h4 {
+  padding: 5px 0 5px 0;
+}
+
 // color pallete chosen from coolors.co, paint sample style.
 // selected for tones
 // urgent: Mango Tango #F0803C
@@ -103,29 +157,6 @@ ul {
   // max-height: 110;
 }
 
-header {
-  //  removing
-  // background: #000;
-  // color: #fff;
-  // line-height: 50px;
-  // grid-row: 1;
-// adding from mt version
-height: 50px;
-background: #000;
-color: #fff;
-padding: 0 .5rem 0 1rem;
-}
-
-// not in MT main scss
-// footer {
-//   grid-row: 3;
-//   grid-column: 1 / 4;
-//   background: #000;
-//   color: #fff;
-//   min-height: 100px;
-//   padding: 1rem;
-// }
-
 .hdr{
   text-align: center;
 }
@@ -135,64 +166,15 @@ padding: 0 .5rem 0 1rem;
 // }
 
 .slugline {
-  font-size: small;
+  font-size: large;
   font-weight: lighter;
   margin: 10px 0;
   text-align: center;
   color: #F4F1BB;
-  padding: 5px;
+  // padding: 1px;
   background-color: #315659;
 }
 
-
-  header {
-    height: 50px;
-    background: #000;
-    color: #fff;
-    padding: 0 .5rem 0 1rem;
-    // grid-row: 1;
-    // grid-column: 1 /4;
-  }
-  
-  header .logo{
-    line-height: 50px;
-    font-weight: bold;
-  }
-  
-
-  nav {
-    // grid-row: 2;
-    // grid-column: 1 / 2;
-    // padding: 0 10px;
-    float: right;
-    }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav ul li
- {
-    // display: block;
-    display: inline;
-  }
-  
-  nav ul li a,
-  nav ul li a:link,
-  nav ul li a:visited{
-    display: inline-block;
-    padding: 0 .5rem;
-    color: #fff;
-    line-height: 50px;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover{
-    background: #444;
-  }
-  
   main {
     /* Use a margin to center the page */
     margin: 0 auto;
@@ -201,9 +183,17 @@ padding: 0 .5rem 0 1rem;
     width: 960px;
   
     /* For smaller screens to not exceed the max screen width */
-    max-width: 100%;
+    max-width: 90%;
   }
 
+  avatar {
+    border-radius: 5%;
+    float: left; 
+    margin-right: 1em;
+  }
+  
+  
+  
 #toggleMenu {
     display: none;
   }
@@ -216,15 +206,11 @@ padding: 0 .5rem 0 1rem;
       line-height: 50px;
     }
 
-    main {
-      max-width: 90%;
-    }
-  
     header {
       position: relative;
-    }
+  }
 
-    nav {
+  nav {
       position: absolute;
       display: none;
       background: #000;
@@ -232,7 +218,11 @@ padding: 0 .5rem 0 1rem;
       left: 0;
       right: 0;
     }
-  
+
+    main {
+      max-width: 100%;
+    }
+
     nav ul li a,
     nav ul li a:link,
     nav ul li a:visited{
@@ -240,6 +230,3 @@ padding: 0 .5rem 0 1rem;
       border-bottom: 1px solid #777;
     }
   }
-
-  // the lines below were in MT2111 main but not my own version; some are Chad's stylings I didn't want to copy.
-  // Menu still works!
